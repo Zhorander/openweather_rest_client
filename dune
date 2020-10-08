@@ -1,0 +1,4 @@
+(executable
+ (name weather)
+ (libraries lwt core cohttp cohttp-lwt cohttp-lwt-unix yojson uri)
+ (preprocess (pps ppx_jane ppx_sexp_conv lwt_ppx)))
